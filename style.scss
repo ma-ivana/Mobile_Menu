@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+$color1: #fff;
+$color2: rgb(20, 69, 179);
+$color3: #2a8efa;
+$square_size: 40px;
+$font_family: 'Open Sans', sans-serif;
+
+body {
+  margin: 0
+}
+
+nav {
+  background-color: $color1;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+
+  .header {
+    width: 70px;
+    height: $square_size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 70px;
+      height: $square_size;
+    }
+  }
+
+  .hamburguesa {
+    width: $square_size;
+    height: $square_size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+#menu {
+  background-color: #283d50;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  height: 100%;
+  transition: all 0.5s;
+  font-family: $font_family;
+  ul {
+    list-style-type: none;
+    line-height: 2;
+           
+    a:link {
+      text-decoration: none;
+      color: $color1;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color:$color3;
+    }
+  }
+}
+
+#menu:target {
+  left: 0px
+}
+
+
+.main {
+  background-color: $color2;
+  height: 500px;
+}

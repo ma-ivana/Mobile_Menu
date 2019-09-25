@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .header {
+  width: 70px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .header img {
+  width: 70px;
+  height: 40px;
+}
+
+nav .hamburguesa {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .hamburguesa img {
+  width: 40px;
+  height: 40px;
+}
+
+#menu {
+  background-color: #283d50;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Open Sans", sans-serif;
+}
+
+#menu ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
+#menu ul a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu ul a:visited {
+  text-decoration: none;
+  color: #2a8efa;
+}
+
+#menu:target {
+  left: 0px;
+}
+
+.main {
+  background-color: #1445b3;
+  height: 500px;
+}
+/*# sourceMappingURL=style.css.map */
